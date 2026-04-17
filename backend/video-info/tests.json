@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Missing URL returns 400",
+      "method": "POST",
+      "path": "/",
+      "body": {},
+      "expectedStatus": 400,
+      "expectedBody": {"error": "URL обязателен"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Valid YouTube URL returns video info",
+      "method": "POST",
+      "path": "/",
+      "body": {"url": "https://www.youtube.com/watch?v=jfKfPfyJRdk"},
+      "expectedStatus": 200,
+      "expectedBody": {"title": "string", "qualities": []},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
