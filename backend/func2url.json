@@ -1,4 +1,5 @@
 {
+  "set-webhook": "https://functions.poehali.dev/63bcba2f-ce86-4a90-834f-1fba9d8340fc",
   "tg-bot": "https://functions.poehali.dev/febe1342-229a-4db4-9ab5-5ca50d70749b",
   "video-info": "https://functions.poehali.dev/57f63a66-0a81-41ea-af47-6aea9e4b8989",
   "video-download": "https://functions.poehali.dev/e33ce016-3975-477e-a571-ec38a69e4139"
